@@ -1,0 +1,38 @@
+
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="HTML5 template" />
+    <title>HTML5 Template</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Project Title</h1>
+        <p>Short description</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Example</h2>
+            <button id="demoBtn">Click me</button>
+            <div id="output" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <small>&copy; <span id="year"></span></small>
+    </footer>
+
+    <script>
+        // small inline bootstrap script
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- load your JS (adjust path if needed) -->
+    <script src="func/one.js" defer></script>
+</body>
+</html>
