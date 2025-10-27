@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>form -vallidation attributes</title>
+    </head>
+    </body>
+        <h4>form vallidation- attributes</h4>
+        <form action="/login">
+            <label>email id:</label>
+            <input type="text"/> <br>
+            
+            <label>password:</label>
+            <input type="text"/> <br>
+
+            <input type="submit" value="login">
+        </form>
+    </body>
+</html>
+        

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>form-validation attributes </title>
+    </head>
+    </html>
+    <body>
+        <h4>form validation-attributes</h4>
+        <form action="/reg">
+            <label>user name:</label>
+            <input type="text"required/><br>
+
+            <label>mobile number::</label> 
+            <input type="text"pattern="[6-9][0-9]{9}" required placeholder="please select 10digit mobile"/><br>
+
+            <label>country 1::</label>
+            <input type="text" required value="india"readonly/><br>
+
+
+            <label>country 2::</label>
+            <input type="text" required value="nepal" disabled/><br>
+            <input type="=submit" value="registration">
+
+        </form>
+        
+    </body>
+</html>
