@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Events Example</title>
+  <style>
+    #hoverBox {
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 150px;
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <div id="hoverBox">Hover Me!</div>
+
+  <script>
+    const box = document.getElementById("hoverBox");
+
+    box.addEventListener("mouseover", function() {
+      box.style.backgroundColor = "lightgreen";
+      box.textContent = "Mouse Over!";
+    });
+
+    box.addEventListener("mouseout", function() {
+      box.style.backgroundColor = "lightblue";
+      box.textContent = "Hover Me!";
+    });
+  </script>
+</body>
+</html>

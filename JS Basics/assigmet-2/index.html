@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <select id="colorSelect">
+    <option value="">Choose a color</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+  </select>
+
+  <p id="result"></p>
+
+  <script>
+    document.getElementById("colorSelect").addEventListener("change", function() {
+      const colorName = this.value;
+      document.getElementById("result").textContent = `You chose: ${colorName}`;
+    });
+  </script>
+</body>
+</html>
+
