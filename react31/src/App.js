@@ -1,13 +1,13 @@
-import Header from "./components/Header";
-import Footer from './components/Footer'
-function App(){
+import React from "react";
+import CompA from "./CompA";
 
-    return <div>
-            <h1>App Component</h1>
-            <hr />
-            <Header/>
-            <Footer/>
-           </div>
+function App() {
+  return (
+    <div className="props">
+      <CompA />
+    </div>
+  );
 }
 
 export default App;
+
