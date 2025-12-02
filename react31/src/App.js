@@ -1,13 +1,14 @@
-import React from "react";
-import CompA from "./CompA";
+import Message from "./stateEx/message";
+import Counter from "./stateEx/counter";
 
-function App() {
+let App = () => {
   return (
-    <div className="props">
-      <CompA />
+    <div>
+      <h2>App Component</h2>
+      <h4></h4>
+      <Counter />
     </div>
   );
-}
+};
 
 export default App;
-
