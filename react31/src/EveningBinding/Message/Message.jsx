@@ -2,19 +2,19 @@ import { useState } from "react";
 let message=()=>{
     let [message,setMessage]=useState("hello");
     let gmHandler=()=>{
-         setMessage("GM")
+         setMessage("Good Moring")
     }
     let gaHandler=()=>{
-        setMessage("GA")
+        setMessage("Good After")
     }
     let gnHandler=()=>{
-        setMessage("GN")
+        setMessage("G Night")
     }
     return <div>
         <h3>Message::{msg}</h3>
-        <button> onClick ={gmHandler}GM</button>
-        <button onClick={gaHandler}>GA</button>d
-        <button onClick={gnHandler}>GN</button>d
+        <button onClick ={gmHandler}>GM</button>
+        <button onClick={gaHandler}>GA</button>
+        <button onClick={gnHandler}>GN</button>
     </div>
 
 }
