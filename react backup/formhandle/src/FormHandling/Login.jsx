@@ -1,25 +1,39 @@
-import { useState } from "react"
+import { useState } from "react";
 
-let Login =()=>{
-    let [email,setEmail]  = useState("")
-    let [password,setPassword]  = useState("")
-    let emailHandler=()=>{
-        alert("Test Case 123")
-    }
-    let passwordHandler=()=>{
-        alert("Test Case 1234")
-    }
+let Login = () => {
+  let [email, setEmail] = useState("");
+  let [password, setPassword] = useState("");
 
-    return <div><h2>Login Component</h2>
-                <form>
-                    <label >Email Id:</label>
-                    <input type="text" onChange={emailHandler} /> <br /> <br/>
+  let emailHandler = (event) => {
+    setEmail(event.target.value);
+  };
 
-                    <label >Password</label>
-                    <input type="text" onChange={passwordHandler}/> <br /> <br/>
-                    
-                    <input type="submit" />
-                </form>
-            </div>
-}
-export default Login
+  let passwordHandler = (event) => {
+    setPassword(event.target.value);
+  };
+
+  let submitHandler = (event) => {
+    event.preventDefault(); 
+    console.log("Email:", email);
+    console.log("Password:", password);
+  };
+
+  return (
+    <div>
+      <h2>Login Component</h2>
+      <form onSubmit={submitHandler}>
+        <label>Email Id:</label>
+        <input type="text" onChange={emailHandler} />
+        <br /><br />
+
+        <label>Password:</label>
+        <input type="password" onChange={passwordHandler} />
+        <br /><br />
+
+        <input type="submit" />
+      </form>
+    </div>
+  );
+};
+
+export default Login;
